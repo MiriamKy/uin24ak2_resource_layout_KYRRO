@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --mørkblå: #2A324B;
+    --mellomblå: #58699D;
+    --lysblå: #E1E5EE;
+    --hvit: #fff;
+
+    --font:'Montserrat', sans-serif;
+    --fontsize: 15px;
+    --bredde: 800px;
+}
+
+body {
+    background-color: var(--lysblå);
+}
+
+#innhold {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 500px;
+    margin-top: 10rem;
+    max-width: var(--bredde);
+    font-family: var(--font);
+    font-size: var(--fontsize);
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    display: block; /*Gjør at ingen andre elementer flyter over dette*/
+    background-color: var(--mørkblå);
+    padding: 2rem;
+    color: var(--hvit);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav ul li :hover {
+    background-color: var(--hvit);
+    color: var(--mørkblå)
+}
+
+main {
+    background-color: var(--hvit);
+    padding: 3rem;
+}
