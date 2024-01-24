@@ -36,7 +36,7 @@ nav ul {
     margin: 0;
 }
 
-nav a {
+nav span {
     display: block; /*Gjør at ingen andre elementer flyter over dette*/
     background-color: var(--mørkblå);
     padding: 2rem;
