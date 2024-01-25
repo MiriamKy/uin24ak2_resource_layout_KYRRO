@@ -24,6 +24,7 @@ body {
     max-width: var(--bredde);
     font-family: var(--font);
     font-size: var(--fontsize);
+    color: var(--mørkblå);
 }
 
 nav ul {
@@ -36,18 +37,26 @@ nav ul {
     margin: 0;
 }
 
-nav span {
+nav button {
     display: block; /*Gjør at ingen andre elementer flyter over dette*/
     background-color: var(--mørkblå);
     padding: 2rem;
     color: var(--hvit);
+    font-family: var(--font);
+    font-size: var(--fontsize);
     text-decoration: none;
     font-weight: 700;
+    border-style: none;
 }
 
 nav ul li :hover {
     background-color: var(--hvit);
-    color: var(--mørkblå)
+    color: var(--mørkblå);
+}
+
+#hvitKnapp {
+    background-color: var(--hvit);
+    color: var(--mørkblå);
 }
 
 main {
