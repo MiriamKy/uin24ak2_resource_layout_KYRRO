@@ -16,8 +16,9 @@ resources[0].sources.map(kilde => {
     })
 
 // Funksjon som kalles ved onClick-eventet på kategoriknappene
-// Det deklareres en variabel (nyArray) som inneholder kun de objektene (her: det objektet) som har nøkkel category lik parameteren kategori, som får verdien sin fra knappen som ble klikket
-// Variabelen brukes til å skrive ut relevant innhold til HTML-en, i forlond til hvilken knapp som er klikket, fordi den nye arrayen nå kun inneholder det tilhørende objektet
+// Det deklareres en variabel (nyArray) som inneholder en ny array kun de objektene (her: det objektet) som har nøkkel category lik parameteren kategori. 
+// Når parameteren får verdien sin fra knappen som ble klikket, gjør det at den nye arrayen kun inneholder informasjonen som er relevant for klikket kategoriknapp.
+// Variabelen brukes så til å skrive ut relevant innhold til HTML-en, i forlond til hvilken knapp som er klikket, fordi den nye arrayen nå kun inneholder det tilhørende objektet.
 // Går så igjennom den nye arrayen som er lagret i variabelen nyArray, for å skrive ut de tilhørende linkene som listepunkter
 function oppdaterInnhold(kategori) {
     //console.log("Klikket" + kategori // Sjekker i konsollen at funskjonen kjører ved klikk, og om parameteren kategori har fått en verdi, og om det er riktig verdi, altså stringen på category-nøkkelen i det objektet/knappen som er klikket på.
@@ -33,9 +34,9 @@ function oppdaterInnhold(kategori) {
         document.getElementById("aktivtInnhold").innerHTML += 
             `<ul><li><a href=${kilde.url}>${kilde.title}</a></li></ul>`
         })
-
-    // Dette var et raskt forsøk på å gjøre knappen som ble klikket hvit, men da mistet jeg de andre knappene, og knappen ble heller ikke hvit, så må jobbe litt mer med det :)
-    /*nyArray.map(hvitKnapp => {
-        document.getElementById("knapper").innerHTML = `<li><button class="hvitKnapp" type="button" onClick="oppdaterInnhold('${hvitKnapp.category}')">${hvitKnapp.category}</button></li>`
-        })*/
 }
+
+// Kilder:
+// Kursmateriale i Webtriks LMS
+// Veiledning fra studentassistenter - ca 1 time
+// Veiledning fra familiemedlem med bakgrunn innen programmering - ca 3 timer tilgjengelig for meg til å stille spørsmål
